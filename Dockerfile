@@ -12,6 +12,8 @@ RUN tar -zxvf Stata13-ubuntu.tar.gz --directory /opt/stata/
 
 RUN rm Stata13-ubuntu.tar.gz
 
+# Create workspace to share files with the containered environment
 WORKDIR "/workspace"
 
+# Start STATA 13 MP
 CMD ["/opt/stata/13/stata-mp"]
