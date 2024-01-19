@@ -4,7 +4,7 @@ RUN apt-get update && apt-get -y install mc libncurses5
 RUN mkdir -p /opt/stata/13
 RUN mkdir -p /workspace
 
-COPY Stata13-ubuntu.tar.gz Stata13-ubuntu.tar.gz
+COPY Stata13-ubuntu-22.04.tar.gz Stata13-ubuntu.tar.gz
 
 COPY stata.lic /opt/stata/13/ 
 
